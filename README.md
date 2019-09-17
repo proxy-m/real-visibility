@@ -1,6 +1,12 @@
 # real-visibility
 real-visibility.js - check real visibility of [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) element (**el**).
 
+# Motivation
+**Why I may need this?**
+If you create web ui with multiple widgets, you often need a way to detect that some widget is out of user visible area, so you can safely stop activities within the widget.
+
+Other public sulutions, which I saw, are not fully satisfy this goal.
+
 # How it works.
 
 1. Check is document page visible or hidden via [page visibility api](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API).
