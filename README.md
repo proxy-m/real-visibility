@@ -19,6 +19,9 @@ Other public sulutions, which I saw, are not fully satisfy this goal.
 
 # How to use it
 
-1. Include real-visibility.js on your html page (or load dynamically via some [javascript loader](https://requirejs.org/) ). Functions isReallyNear and isReallyVisible will be added to DOM prototype (will be global for every DOM element).
+1. Include real-visibility.js on your html page (or load dynamically via some [javascript loader](https://requirejs.org/) ). Functions will be added to DOM prototype (will be global for every DOM element): **isReallyNear()** and **isReallyVisible()**.
 
-2. Call on some DOM element (not on jquery selector!) function isReallyVisible (e.g. `let visible = document.querySelectorAll('body div')[0].isReallyVisible();` ).
+2. Call on some DOM element (not on jquery selector!) function **isReallyVisible()**.
+
+# Example
+`let visible = document.querySelectorAll('body div')[0].isReallyVisible();`
