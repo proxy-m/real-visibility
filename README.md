@@ -7,7 +7,7 @@ If you create web ui with multiple widgets, you often need a way to detect that 
 
 Other public sulutions, which I saw, are not fully satisfy this goal.
 
-# How it works.
+# How it works
 
 1. Check is document page visible or hidden via [page visibility api](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API).
 
@@ -17,8 +17,8 @@ Other public sulutions, which I saw, are not fully satisfy this goal.
 
 4. If at least one these elements is same as **el**, or contains **el**, or **el** contains it, then the **el** is visible.
 
-# How to use it.
+# How to use it
 
 1. Include real-visibility.js on your html page (or load dynamically via some javascript loader). Functions isReallyNear and isReallyVisible will be added to DOM prototype (will be global for every DOM element).
 
-2. Call on some DOM element (not on jquery selector!) function isReallyVisible (e.g. var visible = document.body.isReallyVisible();).
+2. Call on some DOM element (not on jquery selector!) function isReallyVisible (e.g. `let visible = document.querySelectorAll('body div')[0].isReallyVisible();` ).
