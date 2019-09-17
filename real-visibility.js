@@ -12,7 +12,7 @@ Element.prototype.isReallyNear = function(otherEl) {
 
 Element.prototype.isReallyVisible = function() {
     let el = this;
-    var debug = false;
+    let debug = false;
     if (!document.body.contains(el)) {
         return null;
     }
@@ -22,12 +22,12 @@ Element.prototype.isReallyVisible = function() {
         console.warn("NOT FATAL WARNING: Page Visibility API is not supported by your browser.");
     }
 
-    var rectPos = el.getBoundingClientRect();
+    let rectPos = el.getBoundingClientRect();
     if (debug) {
         console.debug("Bounding of: ", el, rectPos);
     }
 
-    var result = 0;
+    let result = 0;
     if (el.isReallyNear(document.elementFromPoint(rectPos.left, rectPos.top))) {
         result++;
     }
@@ -41,8 +41,8 @@ Element.prototype.isReallyVisible = function() {
         result++;
     }
 
-    var info;
-    var r = true;
+    let info;
+    let r = true;
     if (result == 4) {
         info = 'visible';
     } else if (result === 0) {
